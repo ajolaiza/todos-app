@@ -14,30 +14,13 @@ export default function Header(props) {
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
-              </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown"></ul>
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                  <li><hr className="dropdown-divider"/></li>
-                  <li><a className="dropdown-item" href="#">Something else here</a></li>
-                
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            {props.searchBar?<form className="d-flex">
+              </ul>
+            <form className="d-flex">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
               <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>:"no searchBar"}
-          </div>
-        </div>
+            </form >:no search 
+      </div>
+      </div>
       </nav>
     )
 }

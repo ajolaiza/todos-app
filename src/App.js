@@ -10,8 +10,6 @@ import AddTodo from './MyComponents/AddTodo';
 function App() {
   const onDelete=(todo)=>{
     console.log("i am ondelete",todo);
-
-
     setTodos(todos.filter((e)=>{;
   return e!==todo;
 }))} 
@@ -25,7 +23,7 @@ const myTodo={
   desc:desc
 } 
 
-
+setTodos([...todos,myTodo])
 console.log(myTodo)
 }
   const [todos,setTodos]=useState([

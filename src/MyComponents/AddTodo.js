@@ -6,10 +6,11 @@ export default function AddTodo({addTodo}) {
   const[desc,setDesc]=useState("");
   
   const submit=(e)=>{
-    e.preventDefault();
-    if (title||desc ){
-      alert("title or description cannot be blank")
+    e.preventDefault()
+    if (!title||!desc){
+        alert("title or description cannot be blank")
     }
+    
 addTodo(title,desc)
 
   }
